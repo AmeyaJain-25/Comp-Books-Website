@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+h1 {
+  background: rgb(20, 34, 34);
+  color: white;
+  padding: 20px 0;
+}
+
+div img {
+  margin: 20px 0;
+  width: 13em;
+  height: 16em;
+}
+
+.top-cont div {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a i {
+  color: seagreen;
+}
+
+.fa-arrow-circle-down::before {
+  cursor: pointer;
+  font-size: 5em;
+  position: relative;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.fa-arrow-circle-down {
+  transition: 1s;
+}
+.fa-arrow-circle-down:hover {
+  transform: rotate(360deg) scale(1.2);
+}
+
+.card-container {
+  position: relative;
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card-container img {
+  cursor: pointer;
+  margin: 20px 20px;
+  width: 300px;
+  height: 450px;
+  border-radius: 15px;
+  box-shadow: -3px -3px 2px rgba(0, 0, 0, 0.3),
+    5px 5px 5px rgba(255, 255, 255, 0.2),
+    15px 15px 15px rgba(255, 255, 255, 0.2);
+  transition: 0.3s;
+}
+
+.card-container:hover img {
+  filter: blur(5px);
+  transform: scale(0.9);
+  opacity: 0.6;
+}
+
+.card-container img:hover {
+  filter: blur(0px);
+  transform: scale(1.15);
+  opacity: 1;
+}
